@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE filters SYSTEM "filters.dtd">
+
+<!--
+ This file is based on the ARCEP work available at : https://www.arcep.fr/uploads/tx_gsavis/22-1583.pdf
+ which is the basis of the law voted later on
+
+Validate this using :
+	xmllint - -noout - -dtdvalid filters.dtd info.xml
+	xmllint - -noout - -schema filters.xsd info.xml
+'xmllint' can be found in the 'libxml2-utils' apt package
+-->
+
+<filters>
+	<filter name="France IDF" icon="assets/Hexagone IDF.svg">
+		<wwprefix>+033</wwprefix>
+		<entry>0162</entry>
+		<entry>0163</entry>
+	</filter>
+	<filter name="France NO" icon="assets/Hexagone NO.svg">
+		<wwprefix>+033</wwprefix>
+		<entry>0270</entry>
+		<entry>0271</entry>
+	</filter>
+	<filter name="France NE" icon="assets/Hexagone NE.svg">
+		<wwprefix>+033</wwprefix>
+		<entry>0377</entry>
+		<entry>0378</entry>
+	</filter>
+	<filter name="France SE" icon="assets/Hexagone SE.svg">
+		<wwprefix>+033</wwprefix>
+		<entry>0424</entry>
+		<entry>0425</entry>
+	</filter>
+	<filter name="France SO" icon="assets/Hexagone SO.svg">
+		<wwprefix>+033</wwprefix>
+		<entry>0568</entry>
+		<entry>0569</entry>
+	</filter>
+	<filter name="France" icon="assets/Hexagone.svg">
+		<wwprefix>+033</wwprefix>
+		<entry>0948</entry>
+		<entry>0949</entry>
+	</filter>
+	<filter name="Guadeloupe, Saint-Martin, Saint-Barthélemy" icon="assets/Guadeloupe, St Martin, St Barth.svg">
+		<wwprefix>+590</wwprefix>
+		<entry>09475</entry>
+	</filter>
+	<filter name="Guyane" icon="assets/Guyane.svg">
+		<wwprefix>+594</wwprefix>
+		<entry>09476</entry>
+	</filter>
+	<filter name="Martinique" icon="assets/Martinique.svg">
+		<wwprefix>+596</wwprefix>
+		<entry>09477</entry>
+	</filter>
+	<filter name="La Réunion, Mayotte, Océan Indien" icon="assets/La Réunion, Mayotte, Océan Indien.svg">
+		<wwprefix>+262</wwprefix>
+		<entry>09478</entry>
+		<entry>09479</entry>
+	</filter>
+
+</filters>

@@ -1,0 +1,8 @@
+<!ELEMENT filters (filter)*>
+
+<!ELEMENT filter (wwprefix,entry+)>
+<!ATTLIST filter name CDATA #REQUIRED>
+<!ATTLIST filter icon CDATA #REQUIRED>
+
+<!ELEMENT wwprefix (#PCDATA)>
+<!ELEMENT entry (#PCDATA)>
