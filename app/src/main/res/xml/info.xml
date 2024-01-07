@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE filters SYSTEM "filters.dtd">
+<!--<!DOCTYPE filters SYSTEM "./filters.dtd">-->
 
 <!--
  This file is based on the ARCEP work available at : https://www.arcep.fr/uploads/tx_gsavis/22-1583.pdf

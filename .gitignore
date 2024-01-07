@@ -31,3 +31,7 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Extra android Studio
+.DS_Store
+.cxx
