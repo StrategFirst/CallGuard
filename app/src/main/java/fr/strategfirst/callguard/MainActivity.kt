@@ -1,6 +1,10 @@
 package fr.strategfirst.callguard
 
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
+import android.telephony.TelephonyManager
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,6 +17,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import fr.strategfirst.callguard.ui.theme.CallGuardTheme
 
 class MainActivity : ComponentActivity() {
+    
+    private lateinit var receiver : PhoneCallHandler;
+
+    @SuppressLint("UnspecifiedRegisterReceiverFlag")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -22,6 +30,10 @@ class MainActivity : ComponentActivity() {
                     Greeting("Android")
                 }
             }
+        }
+        receiver = PhoneCallHandler()
+        IntentFilter(TelephonyManager.ACTION_PHONE_STATE_CHANGED).also {
+            registerReceiver(receiver, it)
         }
     }
 }
