@@ -5,23 +5,31 @@ import android.content.Context
 import android.content.Intent
 import android.telephony.TelephonyManager
 
+@Suppress("DEPRECATION")
+internal class CallReceiver() : BroadcastReceiver() {
 
-class PhoneCallHandler: BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent) {
+        val state: String = intent.getStringExtra(TelephonyManager.EXTRA_STATE)!!
 
-    override fun onReceive(context: Context?, intent: Intent?) {
-        val state: String? = intent?.extras?.getString(TelephonyManager.EXTRA_STATE);
-        val number: String? = intent?.extras?.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
-        if(
-            state.equals(TelephonyManager.EXTRA_STATE_RINGING)
-            && state != null
-            && number != null
-            ) {
-            this.handleIncomingCall(number);
+        val number: String = try {
+
+            intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER)!!
+
+        } catch (e: Error) {
+
+            "failed"
+
         }
-    }
 
-    private fun handleIncomingCall(number: String) {
-        println(number);
-        TODO();
+        when (state) {
+
+            TelephonyManager.EXTRA_STATE_IDLE -> println(number)
+
+            TelephonyManager.EXTRA_STATE_RINGING -> println(number)
+
+            TelephonyManager.EXTRA_STATE_OFFHOOK -> println(number)
+
+        }
+
     }
 }
