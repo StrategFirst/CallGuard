@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         
-        <receiver android:name=".CallReceiver"
+        <receiver android:name=".PhoneCallHandler"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
