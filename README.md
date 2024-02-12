@@ -1,6 +1,6 @@
 <div align="center" style="text-align: center;">
 
-### 0.0.2
+### 0.0.3
 # CallGuard
 
 <img
