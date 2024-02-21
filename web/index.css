@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Fredoka:wght@300..700&display=swap');
+
+
+html {
+    background: linear-gradient(.3turn, #ededed, #e2e6e7, #ffffff);
+    color: black !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background: linear-gradient(.3turn, #121212, #1d1918, #000000);
+        color: white !important;
+    }
+}
+
+
+body {
+    margin: 2rem auto;
+    width: clamp(60vw, 80rem, 100vw);
+    min-height: 100vh;
+    
+}
+
+header img {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+header h2 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+main h3 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+main section {
+    background: white;
+    width: 20rem;
+    height: 25rem;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    box-shadow: 2px 2px 2px #33333320;
+    transition: .2s;
+}
+
+main section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+main section * {
+    position: relative;
+    z-index: 2;
+}
+
+em {
+    font-style: normal;
+    position: relative;
+}
+
+em:after {
+    position: absolute;
+    bottom: .05em;
+    right: 5%;
+    width: 98%;
+    height: .3em;
+    content: '';
+    background-color: rgb(33, 81, 253);
+    z-index: -1;
+}
+
+main section::after {
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    content: ' ';
+    border-bottom-right-radius: 20px;
+    box-shadow: -2px -2px 8px #333;
+
+    transition: .2s;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+main section:nth-child(2) {
+    background-color: aquamarine;
+}
+
+main section:nth-child(1) {
+    background-color: coral;
+}
+
+main section:nth-child(3) {
+    background-color: rebeccapurple;
+}
+
+nav {
+    margin: 3rem;
+}
+nav section{
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    grid-gap: 50px;
+}
+
+a.SOON {
+    position: relative;
+}
+
+a.SOON:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(.125turn);
+    content: 'SOON';
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18pt;
+    color: #100;
+    text-shadow: white 2px 2px 2px;
+}
+
+:is(nav, aside, footer) h2 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+body > * ~ * {
+    margin-top: 6rem;
+}
+
+main section:hover {
+    transition: .6s;
+
+    border-bottom-right-radius: 0;
+}
+
+main section:hover::after {
+    width: 0px;
+    height: 0px;
+    content: ' ';
+
+    transition: .6s;
+
+}
+
+:is(aside, nav, footer) :is(p, li, span) {
+    font-weight: lighter;
+    font-family: "Fredoka", sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+footer span {
+    text-align: center;
+    display: inherit;
+}
