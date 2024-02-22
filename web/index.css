@@ -85,7 +85,7 @@ em:after {
     width: 98%;
     height: .3em;
     content: '';
-    background-color: rgb(33, 81, 253);
+    background-color: turquoise;
     z-index: -1;
 }
 
@@ -188,4 +188,10 @@ a {
 footer span {
     text-align: center;
     display: inherit;
+}
+
+section img {
+    width: 80%;
+    display: block;
+    margin: 5rem auto;
 }
