@@ -36,3 +36,24 @@ jobs:
       with:
          name: "Build"
          path: app/build/outputs/apk/*
+
+  cd:
+    runs-on: ubuntu-latest
+
+    needs: [ci]
+
+    steps:
+    # Grabing build
+    - name: Grab Build
+      uses: actions/download-artifact@v4
+      with:
+        name: "Build"
+        path: build
+
+    # Making the release
+    - name: Publish to Github
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: 
