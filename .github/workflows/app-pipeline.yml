@@ -56,4 +56,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: 
+        tag_name: ${{ github.ref }}
+        release_name: Alpha Release ${{ github.ref }}
+        body_path: docs/CHANGELOG.md
+        draft: false
+        prerelease: true
