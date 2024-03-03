@@ -1,5 +1,17 @@
 # Change Log
 
+## [0.0.4] - 2024-03-03
+
+**Theme** : Continuous Deployment
+
+### Added
+- Promoting website through github pages
+- Publish apk through github releases
+
+### Removed
+
+### Fixed
+
 ## [0.0.3] - 2024-02-12
 
 **Theme** : Continuous Integration
