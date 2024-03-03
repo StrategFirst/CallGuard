@@ -1,5 +1,17 @@
 # Change Log
 
+## [0.0.4] - 2024-03-03
+
+**Theme** : Continuous Deployment
+
+### Added
+- Promoting website through github pages
+- Publish apk through github releases
+
+### Removed
+
+### Fixed
+
 ## [0.0.3] - 2024-02-12
 
 **Theme** : Continuous Integration
@@ -15,7 +27,8 @@
 
 ### Fixed
 
-## [0.0.2] - 2024-02-09
+<details>
+<summary> <b> [0.0.2] - 2024-02-09 </b> </summary>
 
 **Theme** : Android bases
 
@@ -27,8 +40,10 @@
 - Remove old icons
 
 ### Fixed
+</details>
 
-## [0.0.1] - 2023-12-30
+<details>
+<summary> <b> [0.0.1] - 2023-12-30 </b> </summary>
 
 **Theme** : Global idea
 
@@ -40,3 +55,4 @@
 ### Removed
 
 ### Fixed
+</details>
