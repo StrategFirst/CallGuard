@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Call Guard</string>
+    
+    <string name="call_history_emoji">📲</string>
+    <string name="app_settings_emoji">⚙️</string>
+
 </resources>

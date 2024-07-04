@@ -28,78 +28,12 @@
         android:background="#1A1A1A"
         android:orientation="horizontal">
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:id="@+id/disable_mode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginLeft="1dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginRight="1dp"
-            android:layout_marginBottom="4dp"
-            android:contentDescription="Disable App Filter"
-            android:src="@android:drawable/btn_star"
-             />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:id="@+id/half_mode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginRight="1dp"
-            android:contentDescription="Half Filter App"
-            android:src="@android:drawable/btn_star"
-             />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:id="@+id/full_mode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginRight="1dp"
-            android:contentDescription="Full Filter App"
-            android:src="@android:drawable/btn_star"
-             />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#1A1A1A"
-        android:orientation="horizontal">
-
         <Button
             android:id="@+id/calls"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="📲"
+            android:text="@string/call_history_emoji"
             android:background="#0D0D0D"
              />
 
@@ -108,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="💬"
+            android:text="@string/app_settings_emoji"
             android:background="#151515"
              />
     
